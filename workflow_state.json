@@ -1,0 +1,22 @@
+{
+  "agents": {
+    "team_info_agent": {
+      "agent_id": "699ff0b6510416af3e2a7ce6",
+      "name": "Team Info Agent",
+      "type": "knowledge_base",
+      "rag_id": "699ff0a900c2d274880efcbb"
+    },
+    "inquiry_handler_agent": {
+      "agent_id": "699ff0d0509dca78ad07eef6",
+      "name": "Inquiry Handler Agent",
+      "type": "tool",
+      "tools": ["GMAIL_SEND_EMAIL"]
+    }
+  },
+  "knowledge_bases": {
+    "architect_team_kb": {
+      "rag_id": "699ff0a900c2d274880efcbb",
+      "name": "architect_team_kb"
+    }
+  }
+}

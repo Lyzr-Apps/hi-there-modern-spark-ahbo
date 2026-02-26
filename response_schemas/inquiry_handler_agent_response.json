@@ -1,0 +1,16 @@
+{
+  "agent_name": "Inquiry Handler Agent",
+  "agent_id": "699ff0d0509dca78ad07eef6",
+  "description": "Receives inquiry form data and composes/sends a professional inquiry email via Gmail to the appropriate recipient",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "status": "string",
+    "message": "string"
+  },
+  "example_response": {
+    "status": "Status of the email sending - success or failure",
+    "message": "Confirmation message or error description"
+  }
+}

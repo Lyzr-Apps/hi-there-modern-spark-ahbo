@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Visitor Input",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "team_info_agent",
+      "type": "Agent",
+      "label": "Team Info Agent",
+      "nodeCategory": "agent",
+      "agent_id": "699ff0b6510416af3e2a7ce6"
+    },
+    {
+      "id": "inquiry_handler_agent",
+      "type": "Agent",
+      "label": "Inquiry Handler Agent",
+      "nodeCategory": "agent",
+      "agent_id": "699ff0d0509dca78ad07eef6"
+    },
+    {
+      "id": "output_1",
+      "type": "Output",
+      "label": "Chat Response",
+      "nodeCategory": "end"
+    },
+    {
+      "id": "output_2",
+      "type": "Output",
+      "label": "Email Sent",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "team_info_agent"
+    },
+    {
+      "source": "input_node",
+      "target": "inquiry_handler_agent"
+    },
+    {
+      "source": "team_info_agent",
+      "target": "output_1"
+    },
+    {
+      "source": "inquiry_handler_agent",
+      "target": "output_2"
+    }
+  ]
+}
